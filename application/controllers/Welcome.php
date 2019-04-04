@@ -20,6 +20,14 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data = [
+			'city' => 'Pekalongan',
+			'province' => 'Central Java',
+			'country' => 'Indonesia',
+			'create_date' => 'April,4 2019'
+		];
+
+		vardump($data);
 		$this->load->view('welcome_message');
 	}
 }
